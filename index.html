@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WORLD WATER SISTEM — Tomchilatib va yomg'irlatib sug'orish</title>
+  <meta name="description" content="WORLD WATER SISTEM: Fermerlar uchun tomchilatib va yomg'irlatib sug'orish uskunalarini yetkazib berish va o'rnatish. UZ/RU/EN.">
+  <link rel="preload" as="image" href="assets/sprinklers.jpg">
+  <style>
+    :root { --brand:#0a7c66; --dark:#0f172a; --light:#f8fafc; --muted:#64748b; }
+    * { box-sizing:border-box; }
+    body { margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, 'Noto Sans', 'Inter', Arial, sans-serif; color:var(--dark); background:var(--light); }
+    header { position:sticky; top:0; z-index:10; background:white; border-bottom:1px solid #e5e7eb; }
+    .container { width:min(1080px, 92%); margin-inline:auto; margin-bottom: 20px;}
+    .row { display:flex; gap:24px; flex-wrap:wrap; }
+    .logo { font-weight:800; color:var(--brand); letter-spacing:.3px; }
+    nav { display:flex; align-items:center; justify-content:space-between; padding:14px 0; }
+    nav a { color:var(--dark); text-decoration:none; margin-right:18px; font-weight:600; }
+    .lang-switch button { border:1px solid #e5e7eb; background:#fff; padding:6px 10px; border-radius:8px; margin-left:8px; cursor:pointer; }
+    .hero { display:grid; grid-template-columns: 1.25fr 1fr; gap:28px; align-items:center; padding:42px 0; }
+    .hero img { width:100%; height:100%; object-fit:cover; border-radius:18px; box-shadow:0 6px 24px rgba(2,6,23,.15); }
+    .badge { display:inline-block; background: #e7fff7; color: var(--brand); padding:6px 10px; border-radius:999px; font-weight:700; font-size:12px; }
+    h1 { font-size: clamp(28px, 5vw, 44px); line-height:1.1; margin:10px 0 16px; }
+    p.lead { font-size: clamp(16px, 3.5vw, 18px); color:var(--muted); }
+    .cta { display:flex; gap:12px; margin-top:18px; flex-wrap:wrap; }
+    .btn { padding:12px 16px; border-radius:12px; border:1px solid transparent; cursor:pointer; text-decoration:none; font-weight:700; }
+    .btn.primary { background:var(--brand); color:white; }
+    .btn.ghost { background:white; border-color:#e5e7eb; color:var(--dark); }
+    section { padding:56px 0; }
+    .card { background:white; border:1px solid #e5e7eb; border-radius:16px; padding:18px; box-shadow:0 4px 16px rgba(2,6,23,.06); }
+    .grid-3 { display:grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap:18px; }
+    .small { color:var(--muted); font-size:14px; }
+    footer { background:white; border-top:1px solid #e5e7eb; padding:22px 0; }
+    .gallery img { border-radius:14px; width:100%; height:240px; object-fit:cover; }
+    .gallery_tariff img { border-radius:14px; width:100%; height:320px; object-fit:cover; }
+    .pill { background:#f1f5f9; color:#0f172a; display:inline-flex; align-items:center; gap:8px; padding:8px 12px; border-radius:999px; font-size:14px; margin:6px 6px 0 0; }
+    .kpi { display:grid; grid-template-columns: repeat(2,1fr); gap:14px; }
+    @media (max-width: 860px) { .hero { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+<header>
+  <div class="container">
+    <nav>
+      <div class="logo">WORLD WATER SISTEM</div>
+      <div class="lang-switch" aria-label="Language">
+        <span class="small" data-i18n="lang">Til:</span>
+        <button data-setlang="uz">UZ</button>
+        <button data-setlang="ru">RU</button>
+        <button data-setlang="en">EN</button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <section class="hero">
+    <div>
+      <span class="badge" data-i18n="badge">Sug'orish yechimlari</span>
+      <h1 data-i18n="headline">Tomchilatib va yomg'irlatib sug'orish uskunalari — yetkazib berish va o'rnatish</h1>
+      <p class="lead" data-i18n="tagline">Butun O'zbekiston bo'ylab fermerlar va agro mutaxassislar uchun sifatli, ishonchli va tejamkor tizimlar.</p>
+      <div class="cta">
+        <a href="tel:+998990882244" class="btn primary" data-i18n="call">Qo'ng'iroq qilish</a>
+        <a href="mailto:dilshodismayilov7@gmail.com" class="btn ghost">Email</a>
+      </div>
+      <div style="margin-top:10px" class="small">
+        <span class="pill">📧 dilshodismayilov7@gmail.com</span>
+        <span class="pill">📞 (99) 088‑22‑44</span>
+        <a class="pill" href="https://maps.google.com/?q=Qoraqalpog'iston Respublikasi, Xo'jayli tumani, Xo'jayli shahri Murtazabiy MFY, Mustakillik ko'chasi, 5a" target="_blank" rel="noreferrer">
+          📍 <span data-i18n="map">Manzil (Google Maps)</span>
+        </a>
+      </div>
+    </div>
+    <img src="assets/sprinklers.jpg" alt="Sprinkler irrigation on a field">
+  </section>
+
+  <section id="about">
+    <div class="row">
+      <div class="card" style="flex:1">
+        <h2 data-i18n="about_title">Biz haqimizda</h2>
+        <p data-i18n="about_text_uz">"WORLD WATER SISTEM" MChJ – fermerlarimizga va boshqa qishloq xo'jaligi sohasida faoliyat ko'rsatuvchilarga sifatli yomg'irlatib va tomchilatib sug'orish uskunalarini yetkazib berish va o'rnatish kabi professional xizmatlarni taqdim etadi.</p>
+        <p data-i18n="about_text_ru" style="display:none;">ООО «WORLD WATER SISTEM» предоставляет профессиональные услуги нашим фермерам и другим сельхозоператорам, включая поставку и установку высококачественного оборудования для дождевания и капельного орошения.</p>
+        <p data-i18n="about_text_en" style="display:none;">WORLD WATER SISTEM LLC provides professional services for farmers and agricultural professionals across Uzbekistan, supplying and installing high‑quality sprinkler and drip irrigation equipment.</p>
+        <div class="kpi">
+          <div class="card"><strong data-i18n="kpi1">Suv tejash</strong><br><span class="small" data-i18n="kpi1d">Tomchilatib sug'orishda 1 gektarda ~3300–3400 m³ gacha suv tejaladi.</span></div>
+          <div class="card"><strong data-i18n="kpi2">Bir maromda sug'orish</strong><br><span class="small" data-i18n="kpi2d">Ko'chatlar suvni teng oladi, unumdorlik oshadi.</span></div>
+        </div>
+      </div>
+      <div class="card" style="flex:1">
+        <h2 data-i18n="services_title">Xizmatlar</h2>
+        <ul>
+          <li data-i18n="srv1">Tomchilatib sug'orish tizimlarini loyihalash va o'rnatish</li>
+          <li data-i18n="srv2">Yomg'irlatib (sprinkler) sug'orish tizimlari</li>
+          <li data-i18n="srv3">Nasos, filtrlash, rezervuar va avtomatika yechimlari</li>
+          <li data-i18n="srv4">Qishloq xo'jaligi maydonlari uchun servis va kafolatli xizmat</li>
+        </ul>
+        <div class="gallery row">
+          <img src="assets/collage.jpg" alt="Drip irrigation tape example" style="flex:1;min-width:240px;">
+        </div>
+        <div class="gallery_tariff row">
+          <img src="assets/infographic.jpg" alt="Drip irrigation benefits" style="flex:1;min-width:320px;">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="benefits">
+    <h2 data-i18n="benefits_title">Afzalliklar</h2>
+    <div class="grid-3">
+      <div class="card">
+        <strong data-i18n="b1">Har bir gektardan ikki barobar suv tejaladi</strong>
+        <p class="small" data-i18n="b1d">Mavsumda 1 gektarda odatda ~6700 m³ sarf bo'lsa, tomchilatishda ~3300–3400 m³ gacha tejash mumkin.</p>
+      </div>
+      <div class="card">
+        <strong data-i18n="b2">Bir maromda sug'orish</strong>
+        <p class="small" data-i18n="b2d">Ekilgan ko'chatlar teng va barqaror miqdorda suv oladi.</p>
+      </div>
+      <div class="card">
+        <strong data-i18n="b3">Yer unumdorligi oshadi</strong>
+        <p class="small" data-i18n="b3d">Namlik aniq boshqariladi, yuvilib ketish va sho'rlanish kamayadi.</p>
+      </div>
+      <div class="card">
+        <strong data-i18n="b4">Keraksiz maydonlar namlanmaydi</strong>
+        <p class="small" data-i18n="b4d">Faqat ildiz zonasiga suv beriladi, begona o'tlar kamayadi.</p>
+      </div>
+      <div class="card">
+        <strong data-i18n="b5">Zararkunanda va begona o'tlar nazorati</strong>
+        <p class="small" data-i18n="b5d">Yuzaki namlik kamayishi tufayli kasalliklar xavfi pasayadi.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="card">
+    <h2 data-i18n="contact_title">Bog'lanish</h2>
+    <p class="small">
+      <strong data-i18n="company">"WORLD WATER SISTEM" MChJ</strong><br>
+      📧 <a href="mailto:dilshodismayilov7@gmail.com">dilshodismayilov7@gmail.com</a><br>
+      📞 <a href="tel:+998990882244">(99) 088‑22‑44</a><br>
+      📍 <span data-i18n="addr">Qoraqalpog'iston Respublikasi, Xo'jayli tumani, Xo'jayli shahri Murtazabiy MFY, Mustakillik ko'chasi, 5a</span>
+    </p>
+  </section>
+</main>
+
+<footer>
+  <div class="container small">© <span id="year"></span> WORLD WATER SISTEM — <span data-i18n="foot">Sug'orish bo'yicha professional yechimlar</span></div>
+</footer>
+
+<script>
+// Simple i18n dictionary
+const dict = {
+  uz: {
+    lang:"Til:", badge:"Sug'orish yechimlari",
+    headline:"Tomchilatib va yomg'irlatib sug'orish uskunalari — yetkazib berish va o'rnatish",
+    tagline:"Butun O'zbekiston bo'ylab fermerlar va agro mutaxassislar uchun sifatli, ishonchli va tejamkor tizimlar.",
+    call:"Qo'ng'iroq qilish", map:"Manzil (Google Maps)",
+    about_title:"Biz haqimizda",
+    services_title:"Xizmatlar",
+    srv1:"Tomchilatib sug'orish tizimlarini loyihalash va o'rnatish",
+    srv2:"Yomg'irlatib (sprinkler) sug'orish tizimlari",
+    srv3:"Nasos, filtrlash, rezervuar va avtomatika yechimlari",
+    srv4:"Agro maydonlar uchun servis va kafolatli xizmat",
+    benefits_title:"Afzalliklar",
+    b1:"Har bir gektardan ikki barobar suv tejaladi",
+    b1d:"Mavsumda 1 gektarda odatda ~6700 m³ sarf bo'lsa, tomchilatishda ~3300–3400 m³ gacha tejash mumkin.",
+    b2:"Bir maromda sug'orish",
+    b2d:"Ekilgan ko'chatlar teng va barqaror miqdorda suv oladi.",
+    b3:"Yer unumdorligi oshadi",
+    b3d:"Namlik aniq boshqariladi, yuvilib ketish va sho'rlanish kamayadi.",
+    b4:"Keraksiz maydonlar namlanmaydi",
+    b4d:"Faqat ildiz zonasiga suv beriladi, begona o'tlar kamayadi.",
+    b5:"Zararkunanda va begona o'tlar nazorati",
+    b5d:"Yuzaki namlik kamayishi tufayli kasalliklar xavfi pasayadi.",
+    contact_title:"Bog'lanish",
+    company:"\"WORLD WATER SISTEM\" MChJ",
+    addr:"Qoraqalpog'iston Respublikasi, Xo'jayli tumani, Xo'jayli shahri Murtazabiy MFY, Mustakillik ko'chasi, 5a",
+    kpi1:"Suv tejash", kpi1d:"Tomchilatib sug'orishda 1 gektarda ~3300–3400 m³ gacha suv tejaladi.",
+    kpi2:"Bir maromda sug'orish", kpi2d:"Ko'chatlar suvni teng oladi, unumdorlik oshadi.",
+    foot:"Sug'orish bo'yicha professional yechimlar"
+  },
+  ru: {
+    lang:"Язык:", badge:"Решения для орошения",
+    headline:"Оборудование для капельного и дождевального орошения — поставка и монтаж",
+    tagline:"Качественные, надёжные и экономичные системы по всему Узбекистану для фермеров и агропредприятий.",
+    call:"Позвонить", map:"Адрес (Google Maps)",
+    about_title:"О компании",
+    services_title:"Услуги",
+    srv1:"Проектирование и монтаж систем капельного орошения",
+    srv2:"Системы дождевания (sprinkler)",
+    srv3:"Насосы, фильтрация, резервуары и автоматика",
+    srv4:"Сервис и гарантийное обслуживание сельхозугодий",
+    benefits_title:"Преимущества",
+    b1:"Экономия воды до двух раз на гектар",
+    b1d:"При обычном поливе ~6700 м³/га; при капельном экономия ~3300–3400 м³.",
+    b2:"Равномерное увлажнение",
+    b2d:"Растения получают воду равномерно и стабильно.",
+    b3:"Повышение плодородия почвы",
+    b3d:"Точное управление влагой снижает вымывание и засоление.",
+    b4:"Без лишнего увлажнения междурядий",
+    b4d:"Вода подаётся в корневую зону, меньше сорняков.",
+    b5:"Меньше болезней и вредителей",
+    b5d:"Снижается поверхностная влажность — ниже риск заболеваний.",
+    contact_title:"Контакты",
+    company:"ООО «WORLD WATER SISTEM»",
+    addr:"Республика Каракалпакстан, Ходжейлинский район, г. Ходжейли, МФЙ Муртазабий, ул. Мустакиллик, 5а",
+    kpi1:"Экономия воды", kpi1d:"При капельном экономия ~3300–3400 м³ на 1 гектар.",
+    kpi2:"Равномерный полив", kpi2d:"Равномерная подача воды повышает урожайность.",
+    foot:"Профессиональные решения для орошения"
+  },
+  en: {
+    lang:"Language:", badge:"Irrigation solutions",
+    headline:"Drip & Sprinkler Irrigation — Supply and Installation",
+    tagline:"High‑quality, reliable and efficient systems across Uzbekistan for farmers and agri‑professionals.",
+    call:"Call now", map:"Address (Google Maps)",
+    about_title:"About",
+    services_title:"Services",
+    srv1:"Design & installation of drip irrigation systems",
+    srv2:"Sprinkler (overhead) irrigation systems",
+    srv3:"Pumping, filtration, storage and automation",
+    srv4:"Field service & warranty support",
+    benefits_title:"Benefits",
+    b1:"Up to 2× water savings per hectare",
+    b1d:"Typical seasonal usage ~6700 m³/ha; with drip you can save ~3300–3400 m³.",
+    b2:"Uniform irrigation",
+    b2d:"Seedlings receive water evenly, improving yields.",
+    b3:"Improved soil fertility",
+    b3d:"Precise moisture control reduces leaching and salinity.",
+    b4:"No over‑wetting between rows",
+    b4d:"Water goes directly to the root zone; fewer weeds.",
+    b5:"Lower disease & pest pressure",
+    b5d:"Less surface moisture means lower disease risk.",
+    contact_title:"Contact",
+    company:"WORLD WATER SISTEM LLC",
+    addr:"Karakalpakstan Republic, Khojayli district, Khojayli city, Murtazabiy MFY, Mustaqillik street, 5a",
+    kpi1:"Water savings", kpi1d:"Drip irrigation can save ~3300–3400 m³ per hectare.",
+    kpi2:"Even distribution", kpi2d:"Uniform water delivery boosts productivity.",
+    foot:"Professional irrigation solutions"
+  }
+};
+
+function setLang(lang) {
+  const t = dict[lang] || dict.uz;
+  document.documentElement.lang = lang;
+  for (const [key, val] of Object.entries(t)) {
+    document.querySelectorAll(`[data-i18n="${key}"]`).forEach(el=> el.textContent = val);
+  }
+  // Toggle about paragraphs (specific blocks)
+  document.querySelector('[data-i18n="about_text_uz"]').style.display = (lang==='uz')?'block':'none';
+  document.querySelector('[data-i18n="about_text_ru"]').style.display = (lang==='ru')?'block':'none';
+  document.querySelector('[data-i18n="about_text_en"]').style.display = (lang==='en')?'block':'none';
+  localStorage.setItem('lang', lang);
+}
+
+document.getElementById('year').textContent = new Date().getFullYear();
+document.querySelectorAll('[data-setlang]').forEach(b=> b.addEventListener('click', e=> setLang(e.target.dataset.setlang)));
+setLang(localStorage.getItem('lang') || 'uz');
+</script>
+</body>
+</html>
